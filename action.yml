@@ -1,0 +1,19 @@
+name: 'Terraform Config Inspect'
+description: 'Module information in JSON format'
+inputs:
+  path:
+    description: 'Path to module'
+    required: true
+    default: '.'
+  query:
+    description: 'JSON query in gojq format'
+    required: true
+    default: '.'
+outputs:
+  config:
+    description: 'Terraform config in JSON format'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
