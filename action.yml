@@ -11,7 +11,7 @@ inputs:
     default: '.'
 outputs:
   config:
-    description: 'Terraform config in JSON format'
+    description: 'Requested Terraform config'
 runs:
   using: 'docker'
   image: 'Dockerfile'
