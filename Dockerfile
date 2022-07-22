@@ -9,4 +9,6 @@ COPY --from=builder /go/bin/terraform-config-inspect /bin/terraform-config-inspe
 COPY --from=builder /go/bin/gojq /bin/gojq
 COPY entrypoint.sh /entrypoint.sh
 
+VOLUME /github/workspace
+
 ENTRYPOINT ["/entrypoint.sh"]
