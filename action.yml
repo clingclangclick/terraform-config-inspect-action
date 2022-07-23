@@ -1,5 +1,9 @@
 name: 'Terraform Config Inspect'
 description: 'Module information in JSON format'
+author: Sarah Collison <sarah@clingclang.click>
+branding:
+  color: 'purple'
+  icon: 'filter'
 inputs:
   path:
     description: 'Path to module'
