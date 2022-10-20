@@ -1,4 +1,4 @@
-FROM golang:1.17-alpine AS builder
+FROM golang:alpine AS builder
 
 RUN CGO_ENABLED=0 go install github.com/hashicorp/terraform-config-inspect@latest
 RUN CGO_ENABLED=0 go install github.com/itchyny/gojq/cmd/gojq@latest
